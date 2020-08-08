@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* jumbotron */
+.jumbotron{
+    height: 600px;
+    margin-top: 70px;
+    background-color: #ffffff;
+}
+.jumbotron > .container-jumbotron{
+    display: flex;
+    background-image: url("../assets/background-plant.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 80% 30%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container-jumbotron > .container-text {
+    width: 70%;
+} 
+
+.container-jumbotron > img {
+    size: 90%;
+}
+
+
+/* Stats Global */
+.stats {
+    width: 100%;
+    min-height: 500px;
+    background-image: url("../assets/background-statistik.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 30%;
+    padding: 0rem 2rem;
+}
+
+.container-stats{
+    margin-top: 60px;
+}
+
+.container-result {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-number {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.result-desc {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* News */
+.news {
+    width: 100%;
+    min-height: 300px;
+    padding: 0rem 2rem;
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+}
+
+/* Search Info */
+.search-info {
+    padding: 0rem 2rem;
+    margin-top: 70px;
+    min-height: 600px;
+    background-image: url("../assets/background-plant.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 80% 30%;
+}
+
+.search-bar {
+    width: 250px;
+}
+
+.result {
+    margin-top: 40px;
+    min-height: 278px;
+}
+
+
+/* Info Gejala */
+.info-gejala {
+    min-height: 300px;
+    padding: 0rem 2rem;
+}
+.container-gejala > .container-img {
+    max-width: 150px;
+    max-height: 150px;
+    margin: 20px;
+}
+.container-gejala > .container-img > img{
+    width: 150px;
+    height: 150px;
+}
+
+/* Info Pencegahan */
+.info-pencegahan {
+    padding: 0rem 2rem;
+    background-image: url("../assets/background-shape.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 100%;
+}
+.container-pencegahan{
+    padding: 0rem 6rem;
+}
+.container-card {
+    width: 40%;
+}
+.container-card > .card-columns {
+    column-count: 2;
+}
+.container-card > .card-columns > .card {
+    margin-top: 20px;
+    width: 200px;
+    height: 150px;
+    font-weight: bold;
+}
+
+/* Info Perbandingan */
+.info-compare {
+    padding: 0rem 2rem;
+}
+.container-compare > .card-columns > .card {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+
+/* Media Query */
+@media (max-width: 575.98px) { 
+    .jumbotron {
+        padding: 0rem 2rem;
+    }
+    .jumbotron > .container-jumbotron {
+        display: block;
+    }
+    .container-jumbotron > img {
+    display: none;
+    }
+    .container-text > h1 {
+        font-size: 50px;
+    }
+    .news > .card-columns{
+        column-count: 1;
+    }
+    .container-result {
+        margin-top: 25px;
+    }
+
+
+    .search-info > img {
+        display: none;
+    }
+    .container-info > h1 {
+        font-size: 50px;
+    }
+
+    .container-gejala {
+        flex-direction: column;
+    }
+
+    .main-info {
+        height: 400px;
+    }
+
+    .main-info > .container-jumbotron > img{
+        display: none;
+    }
+
+    .container-pencegahan{
+        padding: 0rem 0rem;
+    }
+    .container-pencegahan > img{
+        display: none;
+    }
+    .container-card {
+        width: 40%;
+    }
+    .container-card > .card-columns {
+        column-count: 1;
+    }
+
+    .container-compare > .card-columns {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width: 576px) { 
+    .news > .card-columns{
+        column-count: 2;
+    }
+    .navbar {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+
+@media (min-width: 768px) { 
+    .news > .card-columns{
+        column-count: 3;
+    }
+}
+
+@media (min-width: 992px) { 
+    .navbar {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .news > .card-columns{
+        column-count: 4;
+    }
+}

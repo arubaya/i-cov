@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I-Cov</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <app-bar></app-bar>
+    </header>
+    <!-- Header End -->
+
+    <!-- Jumbotron Start -->
+    <div class="jumbotron bg-white d-flex justify-content-center">
+      <div class="container-jumbotron">
+        <div class="container-text">
+          <h1 class="display-3 font-weight-bold text-dark">
+            Informasi COVID-19
+          </h1>
+          <p class="lead" style="color: #707070;">
+            I-Cov Merupakan website yang menyediakan informasi seputar virus
+            corona
+          </p>
+          <hr class="my-4" />
+          <a class="btn btn-success btn-lg m-1" href="informasi.html" role="button"
+            >Kenali Virus</a>
+          <a
+            class="btn btn-lg btn-outline-success text-dark m-1"
+            id="btnStatsGlobal"
+            role="button"
+            >Statistik Global</a>
+          <a
+            class="btn btn-lg btn-outline-success text-dark m-1"
+            id="btnStatsIndo"
+            role="button"
+            >Statistik Indonesia</a>
+        </div>
+        <img class="ml-auto" src="./assets/virus.svg" />
+      </div>
+    </div>
+    <!-- Jumbotron End -->
+
+    <!-- Main Start -->
+    <main>
+      <!-- Stats Global Start -->
+      <div class="stats stats-global mt-4">
+        <h1 class="display-4 font-weight-bold text-dark">Statisik Global</h1>
+        <div class="container-stats d-flex justify-content-center">
+          <div class="card-columns">
+            <div
+              class="card-body container-result bg-white border border-success rounded-lg text-success"
+              id="global-kasus"></div>
+            <div
+              class="card-body container-result bg-success rounded-lg text-white"
+              id="global-sembuh"></div>
+            <div
+              class="card-body container-result bg-danger rounded-lg text-white"
+              id="global-mati"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Stats Global End -->
+
+      <!-- Stats Indo Start -->
+      <div class="stats stats-indo d-flex flex-column mt-4">
+        <h1 class="display-4 font-weight-bold text-dark">Statisik Indonesia</h1>
+        <div class="container-stats d-flex justify-content-center">
+          <div class="card-columns">
+            <div
+              class="card-body container-result bg-warning rounded-lg text-dark"
+              id="indo-positif"></div>
+            <div
+              class="card-body container-result bg-success rounded-lg text-white"
+              id="indo-sembuh"></div>
+            <div
+              class="card-body container-result bg-danger rounded-lg text-white"
+              id="indo-mati"></div>
+          </div>
+        </div>
+        <a class="btn btn-outline-success ml-auto mr-auto mt-4" href="statistik.html">Cari statistik di Provinsimu</a>
+      </div>
+      <!-- Stats Indo End -->
+
+      <!-- News Start -->
+      <div class="news mt-4">
+        <h1 class="display-4 font-weight-bold text-dark">Berita Terbaru</h1>
+        <div class="card-columns" id="news-card"></div>
+      </div>
+      <!-- News End -->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <foot-bar></foot-bar>
+    <!-- Footer End -->
+
+  </body>
+</html>
